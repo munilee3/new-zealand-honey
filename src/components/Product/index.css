@@ -1,0 +1,648 @@
+body{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(251, 249, 246, 1);
+}
+.app-container{
+    min-height: 100vh;
+}
+.product-nav{
+    height: 56px;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+.product-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-angle-icon{
+    width: 18px;
+    height: 40px;
+    top: 144.5px;
+    left: 5px;
+    opacity: 0.35;
+}
+.product-image{
+    width: 333px;
+    height: 333px;
+}
+.right-angle-icon{
+    width: 18px;
+    height: 40px;
+    top: 144.5px;
+    left: 310.5px;
+    opacity: 1;
+}
+.product-image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-right-arrow-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-title{
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 16px;
+    position: relative;
+}
+.umf{
+    font-size: 50px;
+    font-weight: normal;
+    position: relative;
+    margin-right: 13px;
+}
+.tm{
+    font-size: 10px;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 15px;
+}
+.popup-trigger{
+    background-color: rgba(102, 102, 102, 0.15);
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 28px;
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+}
+.popup-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 358px;
+    height: 402px;
+    gap: 16px;
+    border-radius: 10px;
+    top: 693px;
+    left: 16px;
+    padding: 20px;
+}
+.popup-inner-content{
+    background-color: rgba(241, 241, 241, 1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 318px;
+    height: 152px;
+    gap: 12px;
+}
+.popup-header{
+    width: 294px;
+    height: 40px;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+.umf-span{
+    font-family: Segoe UI;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+.popup-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+}
+.popup-item{
+    width: 16%;
+    border-bottom: 5px solid;
+    margin-right: 10px;
+    padding-bottom: 6px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+}
+.popup-description{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(49, 49, 49, 0.75);
+
+}.close-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.product-small-item-image{
+    display: none;
+}
+.product-items-container{
+    display: none;
+}
+.rating-review-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.rating-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+}
+.review-count {
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.product-item-description{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(49, 49, 49, 1);
+}
+.product-certifications{
+    width: 50px;
+    height: 50px;
+}
+.product-certification-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.product-size-label{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: rgba(49, 49, 49, 1);
+}
+.product-variant{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 23.94px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+.product-size-image{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.payment-options-container{
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 25px;
+    padding: 10px 0px;
+}
+.subscription-container{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.subscription-text{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.one-time-purchase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one-time-purchase-text-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 28px;
+    left: 30px;
+    border-radius: 50px;
+    border-width: 1px;
+    background-color: rgba(241, 180, 52, 1);
+    width: 90%;
+    margin: 10px 20px;
+    border: none;
+}
+.one-time-save-text-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 28px;
+    left: 30px;
+    border-radius: 50px;
+    border-width: 1px;
+    border: 1px solid rgba(241, 180, 52, 1);
+    width: 90%;
+    margin: 10px 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.one-time-save-text{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15.88px;
+    line-height: 17.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(49, 49, 49, 1);
+    width: 120px;
+}
+.one-time-purchase-text{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 17.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    width: 70px;
+}
+.quantity-container{
+    background-color: rgba(241, 180, 52, 1);
+    border-radius: 50px;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+}
+.quantity-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+.quantity-add-to-cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-to-cart-button{
+    background-color: rgba(49, 49, 49, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 50px;
+    width: 60%;
+}
+.beauty-bundle-main-container{
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 24px;
+    gap: 24px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.beauty-bundle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beauty-bundle-text{
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 20px;
+}
+.beauty-bundle-items-price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.custom-select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333;
+}
+.custom-select {
+
+  appearance: none;
+  background-color: rgba(206, 206, 206, 1); 
+  border: 1px solid #ccc;
+  border-radius: 20px; 
+  padding: 8px 30px 8px 15px; 
+  font-size: 16px;
+  cursor: pointer;
+  outline: none; 
+}
+.umf-product-image{
+    height: 95px;
+    width: 95px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+.umf-product-title{
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+.beauty-bundle-items-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.plus-sign{
+    align-self: flex-start;
+    padding-top: 35px;
+    margin: 0px 10px;
+}
+.price-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.original-price{
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+}
+.discounted-price{
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 18px;
+    text-align: center;
+}
+.discount-percentage{
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 14px;
+    color: rgba(9, 128, 26, 1);
+}
+.add-bundle-to-cart-button{
+    gap: 10px;
+    border-radius: 50px;
+    border-width: 1px;
+    padding: 14px 45px;
+    background-color: rgba(49, 49, 49, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.colour-club{
+    background-color: rgba(255, 255, 255, 1);
+    height: 40px;
+    width: 40px;
+}
+.span-56{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(243, 156, 18, 1);
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 18px;
+    width: 40px;
+    height: 34px;
+    border-radius: 18.69px;
+    padding: 5px;
+}
+.delivery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.afterpay-symbol{
+    background-color: rgba(0, 214, 51, 1);
+    border-radius: 5px;
+    padding: 2px 7px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+.afterpay-text{
+    font-weight: bold;
+    font-style: italic;
+}
+.umf-scale-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.umf-scale{
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+    font-size: 10px;
+}
+.slider-container {
+    margin: 30px auto;
+    position: relative;
+}
+
+.slider-track {
+    height: 1px;
+    background: linear-gradient(to right, #ffc0cb, #ff0000, #800080, #008080, #00ff00); /* Example gradient */
+    border-radius: 4px;
+    position: relative;
+}
+
+.slider-knob {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.label {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.shop-explore-container{
+    display: none;
+}
+.about-contact-buttons-container{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-icon{
+        display: none;
+    }
+    .umf-scale{
+        font-size: 16px;
+    }
+    .delivery-container{
+        flex-direction: row;
+    }
+    .delivery-info{
+        margin-right: 20px;
+    }
+    .shop-explore-container{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 523px;
+    }
+    .shop-explore-text{
+        padding: 10px;
+        border: 1px solid rgba(49, 49, 49, 1);
+        border-radius: 50px;
+        font-size: 13px;
+    }
+    .product-details-container{
+        width: 650px;
+    }
+    .nav-bar-buttons-container{
+        width: 199px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-contact-buttons-container{
+        width: 332px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .beauty-bundle-items-container{
+        margin-right: 20px;
+    }
+    .nav-bar-button{
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .product-main-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .product-image{
+        width: 585px;
+        height: 617px;
+    }
+    .product-items-container{
+        display: block;
+    }
+    .product-small-item-image{
+        display: block;
+        width: 287.5px;
+        height: 200px;
+        
+    }
+    .product-small-items-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        width: 580px;
+    }
+    .product-image-container{
+        flex-direction: column;
+        width: 585px;
+    }
+    .product-certifications{
+        width: 70px;
+        height: 70px;
+    }
+    .one-time-purchase-container{
+        flex-direction: row;
+    }
+    .beauty-bundle-items-price-container{
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}

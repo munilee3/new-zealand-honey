@@ -34,7 +34,10 @@ const Product = () => {
         <div className="product-icons">
             <RxPerson size={18}/>
             <CiSearch size={18} />
-            <BsBag size={18}/>
+            <div className="bag-icon-container">
+              <BsBag size={18}/>
+              <p className="bag-item-count">0</p>
+            </div>
         </div>
       </nav>
       {/* product images section */}
